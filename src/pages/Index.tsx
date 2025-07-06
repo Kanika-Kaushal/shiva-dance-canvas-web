@@ -74,11 +74,6 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-slide-up">
             Discover the grace and spirituality of Indian classical dance through Bharatanatyam, Kathak, and Odissi
           </p>
-          <div className="flex justify-center animate-slide-up">
-            <Button size="lg" variant="secondary" className="hover-lift font-inter">
-              Start Your Journey
-            </Button>
-          </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
           <div className="w-6 h-10 border-2 border-primary-foreground rounded-full flex justify-center">
