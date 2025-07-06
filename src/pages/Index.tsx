@@ -75,11 +75,6 @@ const Index = () => {
             Discover the grace and spirituality of Indian classical dance through Bharatanatyam, Kathak, and Odissi
           </p>
         </div>
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-          <div className="w-6 h-10 border-2 border-primary-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary-foreground rounded-full mt-2 animate-glow"></div>
-          </div>
-        </div>
       </section>
 
       {/* About Section */}
