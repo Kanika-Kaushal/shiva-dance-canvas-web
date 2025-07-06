@@ -8,89 +8,223 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Indian Classical Dance Academy Color Palette */
+    --background: 45 30% 96%; /* Cream/Off-white */
+    --foreground: 15 25% 15%; /* Deep brown */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 40% 98%; /* Light cream */
+    --card-foreground: 15 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 40% 98%;
+    --popover-foreground: 15 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Maroon as primary - traditional and elegant */
+    --primary: 350 60% 35%; /* Rich maroon */
+    --primary-foreground: 45 30% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Gold accents for elegance */
+    --secondary: 45 80% 60%; /* Warm gold */
+    --secondary-foreground: 15 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 20% 90%; /* Soft cream */
+    --muted-foreground: 15 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 40 85% 55%; /* Bright gold accent */
+    --accent-foreground: 15 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%; /* Red for errors */
+    --destructive-foreground: 45 30% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 85%; /* Soft cream border */
+    --input: 45 25% 92%; /* Light cream input */
+    --ring: 350 60% 45%; /* Maroon focus ring */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Slightly rounded for elegance */
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom design tokens for Indian classical theme */
+    --gradient-hero: linear-gradient(135deg, hsl(350 60% 35%), hsl(350 50% 45%));
+    --gradient-accent: linear-gradient(90deg, hsl(45 80% 60%), hsl(40 85% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(45 40% 98%), hsl(45 30% 96%));
+    
+    /* Elegant shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(350 60% 35% / 0.15);
+    --shadow-gold: 0 5px 20px -5px hsl(45 80% 60% / 0.2);
+    --shadow-subtle: 0 2px 10px -2px hsl(15 25% 15% / 0.1);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar variables for consistency */
+    --sidebar-background: 45 35% 95%;
+    --sidebar-foreground: 15 25% 20%;
+    --sidebar-primary: 350 60% 35%;
+    --sidebar-primary-foreground: 45 30% 96%;
+    --sidebar-accent: 45 30% 90%;
+    --sidebar-accent-foreground: 15 25% 20%;
+    --sidebar-border: 45 20% 85%;
+    --sidebar-ring: 350 60% 45%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode maintains the elegant Indian theme */
+    --background: 15 25% 8%; /* Deep brown background */
+    --foreground: 45 30% 95%; /* Cream text */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 15 25% 10%; /* Dark brown cards */
+    --card-foreground: 45 30% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 15 25% 10%;
+    --popover-foreground: 45 30% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 350 55% 45%; /* Lighter maroon for dark mode */
+    --primary-foreground: 45 30% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 70% 50%; /* Adjusted gold for dark mode */
+    --secondary-foreground: 15 25% 10%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 15 20% 15%; /* Dark muted */
+    --muted-foreground: 45 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 40 80% 50%; /* Gold accent for dark */
+    --accent-foreground: 15 25% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 45 30% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 15 20% 20%; /* Dark borders */
+    --input: 15 20% 18%; /* Dark inputs */
+    --ring: 350 55% 50%; /* Maroon focus */
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(350 55% 25%), hsl(350 50% 35%));
+    --gradient-accent: linear-gradient(90deg, hsl(45 70% 40%), hsl(40 75% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(15 25% 10%), hsl(15 25% 8%));
+    
+    /* Dark mode shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(350 60% 20% / 0.3);
+    --shadow-gold: 0 5px 20px -5px hsl(45 70% 40% / 0.25);
+    --shadow-subtle: 0 2px 10px -2px hsl(0 0% 0% / 0.3);
+
+    /* Dark sidebar */
+    --sidebar-background: 15 25% 6%;
+    --sidebar-foreground: 45 25% 85%;
+    --sidebar-primary: 350 55% 45%;
+    --sidebar-primary-foreground: 45 30% 95%;
+    --sidebar-accent: 15 20% 12%;
+    --sidebar-accent-foreground: 45 25% 85%;
+    --sidebar-border: 15 20% 15%;
+    --sidebar-ring: 350 55% 50%;
+}
+}
+
+/* Custom animations for classical dance theme */
+@layer base {
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes glow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes slide-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes dance-pulse {
+    0%, 100% { 
+      transform: scale(1);
+      box-shadow: var(--shadow-subtle);
+    }
+    50% { 
+      transform: scale(1.02);
+      box-shadow: var(--shadow-gold);
+    }
+  }
+}
+
+/* Custom utility classes for the dance academy */
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slide-in-up 0.8s ease-out forwards;
+  }
+  
+  .animate-dance-pulse {
+    animation: dance-pulse 4s ease-in-out infinite;
+  }
+  
+  /* Elegant hover effects */
+  .hover-lift {
+    @apply transition-smooth hover:scale-105 hover:shadow-gold;
+  }
+  
+  .hover-glow {
+    @apply transition-smooth hover:shadow-elegant;
+  }
+  
+  /* Cultural decorative elements */
+  .decorative-border {
+    @apply relative;
+  }
+  
+  .decorative-border::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 gradient-accent;
+  }
+  
+  .decorative-border::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 gradient-accent;
   }
 }
 
@@ -101,5 +235,17 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 600;
+  }
+  
+  /* Smooth scrolling for all anchors */
+  html {
+    scroll-behavior: smooth;
   }
 }
