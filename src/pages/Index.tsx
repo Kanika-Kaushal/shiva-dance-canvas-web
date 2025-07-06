@@ -6,12 +6,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, Clock, Users, Star, Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
 
-// Import generated images
+// Import generated images and uploaded real images
 import heroDance from "@/assets/hero-dance.jpg";
 import kathakClass from "@/assets/kathak-class.jpg";
 import odissiPerformance from "@/assets/odissi-performance.jpg";
-import guruPortrait from "@/assets/guru-portrait.jpg";
 import classGroup from "@/assets/class-group.jpg";
+
+// Real images uploaded by user
+const danceTeacher = "/lovable-uploads/50f40145-1c2e-4d25-8cc3-4615dc11bb5f.png";
+const academyLogo = "/lovable-uploads/385fd1df-2dfd-47c7-bc78-c55dd78f9117.png";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +45,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-hero rounded-full animate-glow"></div>
+              <img src={academyLogo} alt="Shiva Dance Academy Logo" className="w-8 h-8 object-contain" />
               <h1 className="text-2xl font-bold font-playfair text-primary">Shiva Dance Academy</h1>
             </div>
             <div className="hidden md:flex space-x-6">
@@ -115,8 +118,8 @@ const Index = () => {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden shadow-elegant hover-glow">
                 <img 
-                  src={guruPortrait} 
-                  alt="Guru portrait" 
+                  src={danceTeacher} 
+                  alt="Dance teacher performing" 
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -297,14 +300,14 @@ const Index = () => {
             
             <div className="relative group overflow-hidden rounded-lg shadow-elegant hover-lift lg:col-span-2">
               <img 
-                src={guruPortrait} 
-                alt="Guru teaching" 
+                src={danceTeacher} 
+                alt="Dance teacher in action" 
                 className="w-full h-64 object-cover transition-smooth group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth">
                 <div className="absolute bottom-4 left-4 text-primary-foreground">
                   <h3 className="font-semibold">Master Class</h3>
-                  <p className="text-sm">Guru Priya Sharma guiding advanced students</p>
+                  <p className="text-sm">Expert guidance in classical dance forms</p>
                 </div>
               </div>
             </div>
@@ -575,7 +578,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-accent rounded-full animate-glow"></div>
+                <img src={academyLogo} alt="Shiva Dance Academy Logo" className="w-8 h-8 object-contain" />
                 <h3 className="text-xl font-bold font-playfair">Shiva Dance Academy</h3>
               </div>
               <p className="text-primary-foreground/80">
