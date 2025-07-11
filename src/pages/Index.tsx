@@ -149,81 +149,87 @@ const Index = () => {
       <section id="courses" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold font-playfair text-primary mb-4">Our Dance Forms</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Immerse yourself in the classical dance traditions of India
+            <Badge variant="outline" className="mb-4 glass-effect">
+              <Star className="h-4 w-4 mr-2" />
+              Traditional Excellence
+            </Badge>
+            <h2 className="text-5xl md:text-6xl font-extrabold font-playfair text-primary mb-6 bg-gradient-primary bg-clip-text text-transparent">
+              Classical Dance Forms
+            </h2>
+            <p className="text-xl font-semibold text-muted-foreground max-w-2xl mx-auto">
+              Master the ancient art forms under expert guidance
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse">
+            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse border-2 border-primary/20">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-hero rounded-full mb-4 animate-glow"></div>
-                <CardTitle className="font-playfair text-primary text-2xl">Bharatanatyam</CardTitle>
-                <CardDescription>The Divine Expression</CardDescription>
+                <CardTitle className="font-playfair text-primary text-3xl font-extrabold">Bharatanatyam</CardTitle>
+                <CardDescription className="text-lg font-semibold text-accent">The Divine Expression</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground font-medium text-lg leading-relaxed">
                   The ancient temple dance of Tamil Nadu, known for its precise movements, 
                   expressive storytelling, and spiritual depth. Perfect for building discipline and grace.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">Beginner Friendly</Badge>
-                  <Badge variant="outline">Traditional Techniques</Badge>
+                  <Badge variant="secondary" className="font-semibold">Beginner Friendly</Badge>
+                  <Badge variant="outline" className="font-semibold">Traditional Techniques</Badge>
                 </div>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Adavu (Basic steps)</li>
-                  <li>• Abhinaya (Expression)</li>
-                  <li>• Margam (Traditional repertoire)</li>
-                  <li>• Costume & Jewelry training</li>
+                <ul className="text-base text-muted-foreground space-y-2 font-medium">
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Adavu (Basic steps)</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Abhinaya (Expression)</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Margam (Traditional repertoire)</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Costume & Jewelry training</li>
                 </ul>
               </CardContent>
             </Card>
             
-            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse">
+            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse border-2 border-accent/20">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-accent rounded-full mb-4 animate-glow"></div>
-                <CardTitle className="font-playfair text-primary text-2xl">Kathak</CardTitle>
-                <CardDescription>The Art of Storytelling</CardDescription>
+                <CardTitle className="font-playfair text-primary text-3xl font-extrabold">Kathak</CardTitle>
+                <CardDescription className="text-lg font-semibold text-accent">The Art of Storytelling</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground font-medium text-lg leading-relaxed">
                   The classical dance of North India, characterized by intricate footwork, 
                   spins, and expressive gestures that bring stories to life.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">All Levels</Badge>
-                  <Badge variant="outline">Rhythmic Mastery</Badge>
+                  <Badge variant="secondary" className="font-semibold">All Levels</Badge>
+                  <Badge variant="outline" className="font-semibold">Rhythmic Mastery</Badge>
                 </div>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Tatkar (Footwork patterns)</li>
-                  <li>• Chakkars (Spins)</li>
-                  <li>• Thumri & Bhajan</li>
-                  <li>• Tabla accompaniment</li>
+                <ul className="text-base text-muted-foreground space-y-2 font-medium">
+                  <li className="flex items-center"><span className="text-accent font-bold mr-2">•</span> Tatkar (Footwork patterns)</li>
+                  <li className="flex items-center"><span className="text-accent font-bold mr-2">•</span> Chakkars (Spins)</li>
+                  <li className="flex items-center"><span className="text-accent font-bold mr-2">•</span> Thumri & Bhajan</li>
+                  <li className="flex items-center"><span className="text-accent font-bold mr-2">•</span> Tabla accompaniment</li>
                 </ul>
               </CardContent>
             </Card>
             
-            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse">
+            <Card className="hover-lift shadow-subtle bg-card/80 animate-dance-pulse border-2 border-primary/20">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-hero rounded-full mb-4 animate-glow"></div>
-                <CardTitle className="font-playfair text-primary text-2xl">Odissi</CardTitle>
-                <CardDescription>The Temple Dance</CardDescription>
+                <CardTitle className="font-playfair text-primary text-3xl font-extrabold">Odissi</CardTitle>
+                <CardDescription className="text-lg font-semibold text-accent">The Temple Dance</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground font-medium text-lg leading-relaxed">
                   The classical dance of Odisha, known for its lyrical beauty, 
                   sculptural poses, and devotional themes inspired by temple carvings.
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">Intermediate+</Badge>
-                  <Badge variant="outline">Sculptural Beauty</Badge>
+                  <Badge variant="secondary" className="font-semibold">Intermediate+</Badge>
+                  <Badge variant="outline" className="font-semibold">Sculptural Beauty</Badge>
                 </div>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Tribhanga postures</li>
-                  <li>• Pallavi compositions</li>
-                  <li>• Moksha (Spiritual themes)</li>
-                  <li>• Temple sculpture study</li>
+                <ul className="text-base text-muted-foreground space-y-2 font-medium">
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Tribhanga postures</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Pallavi compositions</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Moksha (Spiritual themes)</li>
+                  <li className="flex items-center"><span className="text-primary font-bold mr-2">•</span> Temple sculpture study</li>
                 </ul>
               </CardContent>
             </Card>
